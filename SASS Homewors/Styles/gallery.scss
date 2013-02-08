@@ -1,0 +1,34 @@
+body
+{
+	padding:0;
+	margin:0;
+	ul
+	{
+		list-style:none;
+		margin:0;
+		padding:10px;
+		li
+		{
+			display:inline;
+			input[type="radio"]
+			{
+				display:none;
+				&:checked +label div
+				{ 
+					display:inline;
+				} 
+			}
+			label
+			{
+				div.photo
+				{
+					position:absolute;
+					display:none;
+					top:200px;
+					left:10px;
+				}
+			}
+		}
+	}
+}
+
