@@ -1,12 +1,17 @@
+body, ul, li, div, label
+{
+	margin:0;
+	padding:0;
+}
 body
 {
-	padding:0;
-	margin:0;
 	ul
 	{
+		position:relative;
+		top:10px;
+		left:10px;
 		list-style:none;
-		margin:0;
-		padding:10px;
+
 		li
 		{
 			display:inline;
@@ -15,7 +20,7 @@ body
 				display:none;
 				&:checked +label div
 				{ 
-					display:inline;
+					display:block;
 				} 
 			}
 			label
@@ -25,7 +30,7 @@ body
 					position:absolute;
 					display:none;
 					top:200px;
-					left:10px;
+					left:0;
 				}
 			}
 		}
